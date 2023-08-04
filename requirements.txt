@@ -1,0 +1,6 @@
+Flask==2.0.1
+confluent-kafka==2.2.0
+avro-python3==1.10.2
+urllib3
+requests
+fastavro
