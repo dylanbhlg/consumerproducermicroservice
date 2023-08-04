@@ -1,0 +1,99 @@
+{
+  "type": "record",
+  "namespace": "com.yourorg.data",
+  "name": "mergedData",
+  "doc": "Sample schema for merged Data.",
+  "fields": [
+    {
+      "name": "ID",
+      "type": "string",
+      "doc": "The int type is a 32-bit signed integer."
+    },
+    {
+      "name": "age",
+      "type": "int",
+      "doc": "The double type is a double precision (64-bit) IEEE 754 floating-point number."
+    },
+    {
+      "name": "wage",
+      "type": "double",
+      "doc": "The int type is a 32-bit signed integer."
+    },
+	{
+      "name": "gender",
+      "type": {
+        "type": "enum",
+        "name": "gender",
+        "symbols": [
+          "M",
+          "F"
+        ]
+    }
+},
+{
+      "name": "previousSeller",
+      "type": {
+        "type": "enum",
+        "name": "previousSeller",
+        "symbols": [
+          "Y",
+          "N"
+        ]
+    }
+},
+{
+      "name": "value",
+      "type": "double",
+      "doc": "The double type is a double precision (64-bit) IEEE 754 floating-point number"
+    },
+    {
+      "name": "numberofrooms",
+      "type": "int",
+      "doc": "The int type is a 32-bit signed integer."
+    },
+    {
+      "name": "type",
+      "type": {
+        "type": "enum",
+        "name": "type",
+        "symbols": [
+          "detached",
+          "semidetached"
+        ]
+      }
+    },
+    {
+      "name": "garden",
+      "type": {
+        "type": "enum",
+        "name": "garden",
+        "symbols": [
+          "Y",
+          "N"
+        ]
+      }
+    },
+    {
+      "name": "sqft",
+      "type": "int",
+      "doc": "The int type is a 32-bit signed integer."
+    },
+    {
+      "name": "floors",
+      "type": "int",
+      "doc": "The int type is a 32-bit signed integer."
+    },
+    {
+      "name": "extension",
+      "type": {
+        "type": "enum",
+        "name": "extension",
+        "symbols": [
+          "Y",
+          "N"
+        ]
+      }
+    }
+  ]
+}
+]
