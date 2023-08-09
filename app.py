@@ -63,7 +63,7 @@ try:
 
                     # Submit HTTP request to your machine learning model
                     ai_model_request = requests.post(
-                        "https://ai_model_endpoint",
+                        "http://b9c2a1a3-03bb-4eaf-8fe4-b5d710afa09c.uksouth.azurecontainer.io/score",
                         headers={},
                         json=msg_value_deserialised,
                     )
