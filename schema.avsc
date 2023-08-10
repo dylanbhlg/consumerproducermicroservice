@@ -1,99 +1,104 @@
 {
-  "type": "record",
-  "namespace": "com.yourorg.data",
-  "name": "mergedData",
-  "doc": "Sample schema for merged Data.",
+  "connect.name": "io.confluent.ksql.avro_schemas.KsqlDataSourceSchema",
   "fields": [
     {
-      "name": "ID",
-      "type": "string",
-      "doc": "The int type is a 32-bit signed integer."
+      "default": null,
+      "name": "P_EXTENSION",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "age",
-      "type": "int",
-      "doc": "The double type is a double precision (64-bit) IEEE 754 floating-point number."
+      "default": null,
+      "name": "P_FLOORS",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "wage",
-      "type": "double",
-      "doc": "The int type is a 32-bit signed integer."
+      "default": null,
+      "name": "P_GARDEN",
+      "type": [
+        "null",
+        "string"
+      ]
     },
-	{
-      "name": "gender",
-      "type": {
-        "type": "enum",
-        "name": "gender",
-        "symbols": [
-          "M",
-          "F"
-        ]
+    {
+      "default": null,
+      "name": "P_NUMBEROFROOMS",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "P_SQFT",
+      "type": [
+        "null",
+        "long"
+      ]
+    },
+    {
+      "default": null,
+      "name": "P_TYPE",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "P_VALUE",
+      "type": [
+        "null",
+        "long"
+      ]
+    },
+    {
+      "default": null,
+      "name": "C_ID",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "C_AGE",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "C_GENDER",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "C_PREVIOUSSELLER",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "C_WAGE",
+      "type": [
+        "null",
+        "double"
+      ]
     }
-},
-{
-      "name": "previousSeller",
-      "type": {
-        "type": "enum",
-        "name": "previousSeller",
-        "symbols": [
-          "Y",
-          "N"
-        ]
-    }
-},
-{
-      "name": "value",
-      "type": "double",
-      "doc": "The double type is a double precision (64-bit) IEEE 754 floating-point number"
-    },
-    {
-      "name": "numberofrooms",
-      "type": "int",
-      "doc": "The int type is a 32-bit signed integer."
-    },
-    {
-      "name": "type",
-      "type": {
-        "type": "enum",
-        "name": "type",
-        "symbols": [
-          "detached",
-          "semidetached"
-        ]
-      }
-    },
-    {
-      "name": "garden",
-      "type": {
-        "type": "enum",
-        "name": "garden",
-        "symbols": [
-          "Y",
-          "N"
-        ]
-      }
-    },
-    {
-      "name": "sqft",
-      "type": "int",
-      "doc": "The int type is a 32-bit signed integer."
-    },
-    {
-      "name": "floors",
-      "type": "int",
-      "doc": "The int type is a 32-bit signed integer."
-    },
-    {
-      "name": "extension",
-      "type": {
-        "type": "enum",
-        "name": "extension",
-        "symbols": [
-          "Y",
-          "N"
-        ]
-      }
-    }
-  ]
+  ],
+  "name": "KsqlDataSourceSchema",
+  "namespace": "io.confluent.ksql.avro_schemas",
+  "type": "record"
 }
-]
